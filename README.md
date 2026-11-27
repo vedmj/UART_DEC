@@ -91,7 +91,7 @@ Resync: any failure returns the parser to "hunt for 0xA5".
 | Bit | Flag | ADD | SUB | MUL | AND/OR/XOR/NOT | SHL | SHR | CMP |
 |---|---|---|---|---|---|---|---|---|
 | 0 | Z zero (result==0) | y | y | y | y | y | y | y |
-| 1 | C carry | carry-out | - | product>255 | - | bits lost above bit 15 | last bit shifted out | - |
+| 1 | C carry | carry-out | - | product>255 | - | - | - | - |
 | 2 | B borrow | - | A<B unsigned | - | - | - | - | - |
 | 3 | N negative (bit 7 of result, signed view) | y | y | - | - | - | - | - |
 | 4 | V signed overflow | y | y | - | - | - | - | - |
