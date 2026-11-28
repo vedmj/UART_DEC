@@ -1,0 +1,39 @@
+#-----------------------------------------------------------
+# Vivado v2026.1 (64-bit)
+# SW Build 6511674 on Tue Jun 16 11:02:23 MDT 2026
+# IP Build 6504888 on Tue Jun 09 09:05:25 MDT 2026
+# SharedData Build 6501428 on Mon Jun 08 17:34:18 MDT 2026
+# Start of session at: Sat Nov 28 12:08:20 2026
+# Process ID         : 22992
+# Current directory  : C:/Users/vedmj/Desktop/UART-DEC/UART_Viavdo/UART_Vivado
+# Command line       : vivado.exe -gui_launcher_event rodinguilauncherevent23100 C:\Users\vedmj\Desktop\UART-DEC\UART_Viavdo\UART_Vivado\UART_Vivado.xpr
+# Log file           : C:/Users/vedmj/Desktop/UART-DEC/UART_Viavdo/UART_Vivado/vivado.log
+# Journal file       : C:/Users/vedmj/Desktop/UART-DEC/UART_Viavdo/UART_Vivado\vivado.jou
+# Running On         : VedMJ11
+# Platform           : Windows 11
+# Operating System   : 26300
+# Processor Detail   : Intel(R) Core(TM) 7 240H
+# CPU Frequency      : 2995 MHz
+# CPU Physical cores : 10
+# CPU Logical cores  : 16
+# Host memory        : 25378 MB
+# Swap memory        : 1610 MB
+# Total Virtual      : 26988 MB
+# Available Virtual  : 15354 MB
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/vedmj/Desktop/UART-DEC/UART_Viavdo/UART_Vivado/UART_Vivado.xpr
+update_compile_order -fileset sources_1
+reset_run impl_1 -prev_step 
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+open_hw_manager
+connect_hw_server -allow_non_jtag
+open_hw_target
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/vedmj/Desktop/UART-DEC/UART_Viavdo/UART_Vivado/UART_Vivado.runs/impl_1/top_uart_calculator.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
